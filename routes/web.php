@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', 'MainController@index')->name('main');
-Route::get('/user/register', 'HomeController@index')->name('user');
-
-
 Auth::routes();
+
+Route::get('/', function () {
+    return redirect('login');
+});
+
+Route::get('/home', 'HomeController@index');
+
 
 

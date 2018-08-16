@@ -59,6 +59,15 @@
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="roles">User</label>
+                            <input id="roles" type="radio" name="role" value="user" checked>
+                            <br>
+                            <label for="roles">Garage</label>
+
+                            <input type="radio" name="role" value="garage">
                         </div>
 
                         <div class="form-group row mb-0">
